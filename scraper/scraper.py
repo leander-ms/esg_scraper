@@ -17,6 +17,7 @@ class ESG_Rating_Scraper:
         self.driver = webdriver.Chrome(options=options)
         self.wait = WebDriverWait(self.driver, 10)
 
+
     def get_page(self, url):
         self.driver.get(url)
 
