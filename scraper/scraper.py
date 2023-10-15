@@ -8,13 +8,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import NoSuchElementException
 
+
 class ESG_Rating_Scraper:
     def __init__(self):
-        s = Service('C:/Users/leand/Downloads/chromedriver_win32/chromedriver.exe')
         options = Options()
         options.add_argument('log-level=3')
         options.add_argument('headless=True')
-        self.driver = webdriver.Chrome(service=s, options=options)
+        self.driver = webdriver.Chrome(options=options)
         self.wait = WebDriverWait(self.driver, 10)
 
     def get_page(self, url):
