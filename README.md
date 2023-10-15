@@ -6,5 +6,5 @@ Uses selenium to scrape sustainalytics website (sustainalytics.com/esg-scraper) 
 Also, searched company does not have to match with the company names in the sustainalyitcs database. Script will itereate over parts of the company name and use sklearn TfidfVectorizer and cosine similarity to find best possible result.
 Required Packages:
 - SciKit-Learn (Python)
-- Selenium (Python)
+- Selenium (Python) --> best to use version 4.9 or newer for chrome driver handling. 
 - Requires either Chrome or FireFox Webdriver.
