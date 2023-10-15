@@ -17,7 +17,6 @@ class ESG_Rating_Scraper:
         self.driver = webdriver.Chrome(options=options)
         self.wait = WebDriverWait(self.driver, 10)
 
-
     def get_page(self, url):
         self.driver.get(url)
 
@@ -87,7 +86,7 @@ class ESG_Rating_Scraper:
 
 if __name__ == '__main__':
     companies_to_scrape = []
-    companies_to_scrape.extend(['Alphabet', 'Apple'])
+    companies_to_scrape.extend(['Alphabet', 'Apple', 'HSBC Continental Europe'])
     failed_companies = []
     company_ratings = []
     scraper = ESG_Rating_Scraper()
